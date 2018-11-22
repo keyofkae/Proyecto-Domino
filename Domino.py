@@ -17,6 +17,17 @@ jugador1=input("Nombre jugador1:")
 jugador2=input("Nombre jugador2:")
 #Comienza el juego
 print("Comienza el juego,suerte jugadores")
-print("Jugador 1:",fichasjugador1)
-print("Jugador 2:",fichasjugador2)
+print("Jugador 1 te han tocado estas fichas:\n",fichasjugador1)
+print("Jugador 2 te han tocado estas fichas:\n",fichasjugador2)
+#Función para imprimir las fichas
+def fj1(fichasjugador1):
+    for i in range(len(fichasjugador1)):
+        print(fichasjugador1[i],"")
+    return(fichasjugador1)
+fj1(fichasjugador1)
+
+#Se elige de forma aleatoria el jugador que empieza
+jugadores=[jugador1,jugador2]
+elegiraleatorio=random.choice(jugadores)
+print("Empieza", elegiraleatorio)
 
